@@ -12,6 +12,11 @@ import android.telephony.TelephonyManager;
 
 public class Dev {
 
+	/**
+	 * 判断网络是否可用
+	 * @param context
+	 * @return
+	 */
 	public static boolean isNetworkAvailable(Context context) { 
 		ConnectivityManager connectivity = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE); 
 		if (connectivity == null) {   
@@ -28,6 +33,11 @@ public class Dev {
 	    return false; 
 	}
 	
+	/**
+	 * 判断当前是否使用wifi网络
+	 * @param context
+	 * @return
+	 */
 	public static boolean isWifi(Context context) {   
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);   
         NetworkInfo activeNetInfo = connectivityManager.getActiveNetworkInfo();   
@@ -37,6 +47,11 @@ public class Dev {
         return false; 
 	}    
     
+	/**
+	 * 判断当前是否使用移动网络
+	 * @param context
+	 * @return
+	 */
 	public static boolean isMobileNet(Context context) {   
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);   
         NetworkInfo activeNetInfo = connectivityManager.getActiveNetworkInfo();   

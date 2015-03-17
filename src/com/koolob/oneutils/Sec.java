@@ -6,6 +6,11 @@ import java.security.NoSuchAlgorithmException;
 
 import android.util.Base64;
 
+/**
+ * 加密类
+ * @author dong
+ *
+ */
 public class Sec {
 
 	public static String base64_encode(String str){
